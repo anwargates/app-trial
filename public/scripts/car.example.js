@@ -41,12 +41,26 @@ class Car {
 
   render() {
     return `
-      <p>id: <b>${this.id}</b></p>
-      <p>plate: <b>${this.plate}</b></p>
-      <p>manufacture: <b>${this.manufacture}</b></p>
-      <p>model: <b>${this.model}</b></p>
-      <p>available at: <b>${this.availableAt}</b></p>
-      <img src="${this.image}" alt="${this.manufacture}" width="64px">
-    `;
+        <div class="card">
+          <img class="card-img-top" src="${this.image}" alt="${this.manufacture}"/>
+            <div class="card-body">
+              <p class="card-title">${this.manufacture}/${this.model}</p>
+              <h3 class="card-price">${this.rentPerDay}</h3>
+              <p class="card-caption">
+                ${this.description}
+              </p>
+              <p class="card-caption">
+                <i class="bx bx-time-five" alt="icon-clock"></i>
+                Updated at 4 Apr 2022, 09.00
+              </p>
+            </div>
+            <div class="button-group card-body card-body-button d-flex justify-content-center">
+              <button type="button" class="btn btn-primary card-body-button"
+                >
+                <a class="font-weight-bold">Pilih Mobil</a>
+              </button>
+            </div>
+        </div>
+      `;
   }
 }

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="Sabrina" />
+  <meta name="description" content="Lorem ipsum dolor sit amet" />
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+  <title>Binar: Challenge 04</title>
+
+  <!-- Example CSS -->
+  <link href="./css/style.example.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="bootstrap/bootstrap.min.css"> -->
+  <!-- owl carousel -->
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- manual styling -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- responsive -->
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="javascript:void(0)">
+        <button class="btn btn-primary "></button>
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link " href="javascript:void(0)">Our Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="javascript:void(0)">Why Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="javascript:void(0)">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="javascript:void(0)">FAQ</a>
+          </li>
+          <li>
+            <button class="btn btn-success spasi"> Register </button>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <!-- header -->
+  <div class="container-fluid bg-light">
+    <div class="row tinggi">
+      <div class="col-5 offset-1 header-kiri">
+        <h1>Sewa & Rental Mobil Terbaik di kawasan Depok</h1>
+        <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu
+          siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+        <button class="btn btn-success"> Mulai Sewa Mobil </button>
+      </div>
+      <div class="col-6 gmbrcar">
+        <div class="header-bingkai">
+          <img src="images/img_car.png" alt="" class="header-gambar bottom-0">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end header -->
+  <!-- Find Car -->
+  <div class="container-fluid bg-white">
+    <div class="">
+      <button id="load-btn">Load</button>
+      <button id="clear-btn">Clear</button>
+      <div id=""></div>
+    </div>
+    <div class="container overflow-hidden">
+      <div class="row">
+          <div class="col">
+              <div class="row">
+                <div id="cars-container" class="card-deck gap-2"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </div>
+  <!-- end Find Car -->
+  <!-- footer -->
+  <div class="container-fluid bg-white py-5 footerArea">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p>Jalan Suroyo No. 161 Mayangan Kota Depok 672000</p>
+          <p><a href="">binarcarrental@gmail.com</a></p>
+          <p>081-233-334-808</p>
+        </div>
+        <div class="col-md-2">
+          <ul>
+            <li><a href="">
+                <p class="footer-menu">Our service</p>
+              </a></li>
+            <li><a href="">
+                <p class="footer-menu">Why us</p>
+              </a></li>
+            <li><a href="">
+                <p class="footer-menu">Testimonial</p>
+              </a></li>
+            <li><a href="">
+                <p class="footer-menu">FAQ</p>
+              </a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p>Connect with us</p>
+          <ul class="footer-ikon">
+            <li><a href=""><img src="images/icon_facebook.png" alt=""></a></li>
+            <li><a href=""><img src="images/icon_instagram.png" alt=""></a></li>
+            <li><a href=""><img src="images/icon_twitter.png" alt=""></a></li>
+            <li><a href=""><img src="images/icon_mail.png" alt=""></a></li>
+            <li><a href=""><img src="images/icon_twitch.png" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 offset-1">
+          <p>Copyright Binar 2022</p>
+          <button class="btn btn-primary"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end footer -->
+  <!-- script -->
+  <!-- <script type="text/javascript" src="scripts/bootstrap.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- owl carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- js owlcarousel -->
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+      // items:3,
+      loop: true,
+      center: true,
+      margin: 10,
+      dots: false,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 2
+        }
+      }
+    })
+  </script>
+
+  <!-- Example Javascript -->
+  <script type="text/javascript" src="./scripts/binar.js"></script>
+  <script type="text/javascript" src="./scripts/app.example.js"></script>
+  <script type="text/javascript" src="./scripts/car.example.js"></script>
+  <script type="text/javascript" src="./scripts/main.example.js"></script>
+</body>
+
+</html>

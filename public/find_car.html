@@ -71,7 +71,6 @@
         <h1>Sewa & Rental Mobil Terbaik di kawasan Depok</h1>
         <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu
           siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-        <button class="btn btn-success"> Mulai Sewa Mobil </button>
       </div>
       <div class="col-6 gmbrcar">
         <div class="header-bingkai">
@@ -81,22 +80,75 @@
     </div>
   </div>
   <!-- end header -->
+  <!-- search area -->
+  <section id="searchCar">
+    <div class="container gx-5 mb-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card w-100 mx-auto py-3 ">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+
+                <div class="flex-item me-3">
+                  <p class="mb-2">Tipe Driver</p>
+                  <select class="form-select form-select-md">
+                    <option hidden>Pilih Tipe Driver</option>
+                    <option value="1">Dengan Sopir</option>
+                    <option value="2">Tanpa Sopir (Lepas Kunci)</option>
+                  </select>
+                </div>
+
+                <div class="flex-item me-3">
+                  <p class="mb-2">Pilih Tanggal</p>
+                  <div class="input-group date" id="datepicker">
+                    <input type="date" class="form-control">
+                    <span class="input-group-append">
+                    </span>
+                  </div>
+                </div>
+
+                <div class="flex-item me-3">
+                  <p class="mb-2">Pilih Jam</p>
+                  <div class="input-group date" id="timepicker">
+                    <input type="time" class="form-control" id="time" name="appt" min="10:00" max="17:00" required>
+                    <span class="input-group-append">
+                    </span>
+                  </div>
+                  <!-- <input type="time" id="time" name="appt" min="09:00" max="18:00" required> -->
+                </div>
+
+                <div class="flex-item me-3">
+                  <p class="mb-2">Jumlah Penumpang (Optional)</p>
+                  <div class="input-group passanger mb-3">
+                    <input type="number" class="form-control" aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-default">
+                    <span class="input-group-text "><img src="images/fi_users.png" alt=""></span>
+                  </div>
+                </div>
+
+                <div class="flex-item my-auto pt-3">
+                  <button class="btn btn-success" id="load-btn">Cari Mobil</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end search area -->
   <!-- Find Car -->
   <div class="container-fluid bg-white">
-    <div class="">
-      <button id="load-btn">Load</button>
-      <button id="clear-btn">Clear</button>
-      <div id=""></div>
-    </div>
     <div class="container overflow-hidden">
-      <div class="row">
-          <div class="col">
-              <div class="row">
-                <div id="cars-container" class="card-deck gap-2"></div>
-              </div>
-          </div>
+      <div class="col">
+        <div class="row">
+          <button id="load-btn">Load</button>
+          <button id="clear-btn">Clear</button>
+          <div id="cars-container" class="card-deck gap-2"></div>
+        </div>
       </div>
-  </div>
+    </div>
 
   </div>
   <!-- end Find Car -->
@@ -158,32 +210,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- owl carousel -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- js owlcarousel -->
-  <script type="text/javascript">
-    $('.owl-carousel').owlCarousel({
-      // items:3,
-      loop: true,
-      center: true,
-      margin: 10,
-      dots: false,
-      nav: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        1000: {
-          items: 2
-        }
-      }
-    })
-  </script>
+
 
   <!-- Example Javascript -->
   <script type="text/javascript" src="./scripts/binar.js"></script>

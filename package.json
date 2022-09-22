@@ -7,6 +7,21 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node server/index.js"
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anwargates/app-trial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anwargates/app-trial/issues"
+  },
+  "homepage": "https://github.com/anwargates/app-trial#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

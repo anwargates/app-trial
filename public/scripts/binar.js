@@ -40,4 +40,8 @@ class Binar {
 
     return cars;
   }
+
+  driverTypes(){
+    
+  }
 }
